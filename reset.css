@@ -1,0 +1,86 @@
+/* https://github.com/xshubhamg/simple-resets/reset.css */
+/* https://piccalil.li/blog/a-modern-css-reset/ */
+/* https://www.joshwcomeau.com/css/custom-css-reset/ */
+
+/* Box sizing rules */
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* slightly bigger line-height (1.4 is deafult) */
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* hide content from screen readers */
+.sr-only {
+  border: 0 !important;
+  clip: rect(1px, 1px, 1px, 1px) !important;
+  -webkit-clip-path: inset(50%) !important;
+  clip-path: inset(50%) !important;
+  height: 1px !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  padding: 0 !important;
+  position: absolute !important;
+  width: 1px !important;
+  white-space: nowrap !important;
+}
+
+/* Remove list styles on ul, ol elements with a list role */
+ul,
+ol {
+  list-style-type: none;
+}
+
+/* set default link styles */
+a {
+  text-decoration: none;
+  font: inherit;
+  color: inherit;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+/* set default image styles */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* remove default form styles */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* remove default button styles */
+button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* Stop words from overflowing */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
